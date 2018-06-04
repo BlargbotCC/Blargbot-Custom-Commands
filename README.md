@@ -1,2 +1,2 @@
 # In development ;)
-Go to [our discord server](http://discord.gg/jy3CXtu) for more info!
+Go to [our discord server](https://discord.gg/zkqF2gp) for more info!
