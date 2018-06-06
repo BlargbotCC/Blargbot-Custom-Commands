@@ -1,0 +1,8 @@
+{embed;{lb}
+    "description": "{args}",
+    "timestamp": "{time}",
+    "footer": {lb}
+      "text": "• {username}#{userdiscrim}",
+      "icon_url": "{useravatar}"
+    {rb}
+{rb}}
