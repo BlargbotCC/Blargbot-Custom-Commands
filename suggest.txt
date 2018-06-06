@@ -1,0 +1,19 @@
+{if;{argslength};>=;6;
+        {quiet;{increment;_suggestionid}}
+
+{quiet;{set;~messageid;{send;452693155830169601;;
+{buildembed;
+title:New Suggestion!;
+description:{args};
+timestamp:{time};
+fields.name:Author Info;
+fields.value:**{username}#{userdiscrim}** (ID: {userid});
+footer.text:Feedback #{realpad;{get;_suggestionid};4;0;left}
+}}}}
+
+{quiet;{set;_suggestid-{realpad;{get;_suggestionid};4;0;left};{get;~messageid}}}
+
+{reactadd;452693155830169601;{get;~messageid};🔺;🔻}
+{quiet;{send;{channelid};👌}}
+
+;{quiet;{send;{channelid};Please describe your suggestion in more detail, {usermention}!}}}
