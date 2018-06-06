@@ -1,5 +1,7 @@
 # Discord Chat
 
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+
 <widgetbot
   server="452675283485589505"
   channel="452692979082330115"
@@ -7,11 +9,9 @@
   shard="https://beta.widgetbot.io"
 ></widgetbot>
 
-<script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
-
 <style>
   #embed{
-    height: 600;
+    height: 600px;
     width: 100%;
   }
 </style>
