@@ -12,7 +12,7 @@
     <meta name="theme-color" content="{{ site.color }}">
     <link rel="shortcut icon" type="image/png" href="{{ site.image }}">
     <script src="https://june11.battleforthenet.com/widget.js" async></script>
-    <script src="https://twemoji.maxcdn.com/twemoji.min.js">twemoji.parse(document.body)</script>
+    <script src="https://twemoji.maxcdn.com/2/twemoji.min.js"></script>
     
     <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async>
       const crate = new Crate({
@@ -24,6 +24,25 @@
 
      crate.notify('Welcome to Blargbot Custom Commands! Click the button below to chat on Discord.')
 </script>
+    
+<style>
+img.emoji {
+  display: inline !important;
+  border: none !important;
+  box-shadow: none !important;
+  height: 1em !important;
+  width: 1em !important;
+  margin: 0 .07em !important;
+  vertical-align: -0.1em !important;
+  background: none !important;
+  padding: 0 !important;
+}
+
+.emojis {
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+</style>
 
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -67,5 +86,8 @@
         ga('send', 'pageview');
       </script>
     {% endif %}
+      <script>
+        twemoji.parse(document.body)
+      </script>
   </body>
 </html>
