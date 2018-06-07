@@ -1,3 +1,7 @@
+---
+layout: chat
+---
+
 # Discord Chat
 
 <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
