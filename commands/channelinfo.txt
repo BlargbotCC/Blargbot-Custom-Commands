@@ -1,0 +1,4 @@
+__**Channel Info for {channelname}**__
+**Channel Name**: `{channelname}` 
+**Channel ID**: `{channelid}`
+**Channel Position**: `{channelpos}`
