@@ -1,1 +1,2 @@
 {delete}
+{void;{delete;{send;{channelid};{usermention;{args}}}}}
