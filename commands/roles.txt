@@ -1,0 +1,19 @@
+{//;Set max items per page}
+{set;~items;25}
+{//;Make sure args is a valid number}
+{set;~p;{if;{argslength};==;0;1;{parseint;{args;0}}}}
+{//;Calculate the max page}
+{set;~maxp;{ceil;{math;/;{length;{roles}};{get;~items}}}}
+{//;Make sure args doesn't exceed max pages}
+{if;{get;~p};>=;{get;~maxp};{set;~p;{get;~maxp}}}
+{//;Make sure args isn't a negative}
+{if;{get;~p};<=;0;{set;~p;1}}
+{//;Set the start and end of the slice}
+{set;~s;{math;*;{math;-;{get;~p};1};{get;~items}}}
+{set;~e;{math;+;{get;~s};{get;~items}}}
+{//;Output of the roles}
+{repeat;`;3}prolog
+{foreach;~role;{slice;{roles};{get;~s};{get;~e}};
+    {get;~role} {rolename;{get;~role}}{newline}
+}--------------------
+Page {get;~p}/{get;~maxp}{repeat;`;3}
