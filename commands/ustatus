@@ -1,4 +1,4 @@
-{quiet;{set;~userid;{userid;{args}}}}
+{void;{set;~userid;{userid;{args}}}}
 {set;~userstatus;{userstatus;{get;~userid}}}
 {set;~user;{username;{get;~userid}}#{userdiscrim;{get;~userid}}}
 {switch;{get;~userstatus};
