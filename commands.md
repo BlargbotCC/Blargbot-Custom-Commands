@@ -1,1 +1,33 @@
-# Active Command List
+# Command List
+### Fun Commands
+[`b!8Ball`](https://blargbotcc.tk/commands/8ball.txt) An ordinary 8 ball command!
+
+[`b!embed`](https://blargbotcc.tk/commands/embed.txt) Makes an embed in the current channel!
+
+[`b!simpleembed`](https://blargbotcc.tk/commands/simpleembed.txt) An embed with only an embed, no author stats at all!
+
+[`b!everyone`](https://blargbotcc.tk/commands/everyone.txt) Mentions @everyone... or does it?
+
+[`b!ghost`](https://blargbotcc.tk/commands/ghost.txt) Ghosts the mentioned user!
+
+[`b!say`](https://blargbotcc.tk/commands/say.txt) Have the bot say what you want it to!
+### Server Commands
+[`b!myuserinfo`](https://blargbotcc.tk/commands/myuserinfo.txt) Grabs your info and shows the tags that will get that info in your own custom command!
+
+[`b!ustatus`](https://blargbotcc.tk/commands/ustatus.txt) Grabs the status of the user mentioned or ID!
+
+[`b!roles`](https://blargbotcc.tk/commands/roles.txt) A multiple page role list, useful for when you have a lot!
+
+[`b!channelinfo`](https://blargbotcc.tk/commands/channelinfo.txt) Gives information about the current channel!
+### Suggestion Commands
+[`b!suggest`](https://blargbotcc.tk/commands/suggest.txt) **Anyone Can Use** | Sends a suggestion to that channel and adds the reactions
+
+[`b!sd`](https://blargbotcc.tk/commands/sd.txt) **Mod Use Only** | Deletes a suggestion with that ID
+### How To Add Custom Commands
+To add custom commands to your Blargbot, follow the instructions below:
+
+```b!ccommand <command name> <command content>```
+
+Role Needed: Admin
+
+For more information on the custom command setup, visit the [Blargbot Custom Commands Discord server](https://discord.gg/wFBYUXS) or go to [www.blargbot.xyz/commands/#ccommand](https://blargbot.xyz/commands/#ccommand).
