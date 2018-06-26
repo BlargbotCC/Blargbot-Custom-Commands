@@ -1,0 +1,19 @@
+{set;~a;
+  timestamp:{time};
+  footer.text:Current Command List as of:;
+  thumbnail.url:{guildicon};
+  title:Public Custom Commands List;
+  description:This is a WIP list of all public custom commands on BCC that the code of each may be viewed on our [github](https://github.com/BlargbotCC/Blargbot-Custom-Commands)!
+}
+
+{foreach;~command;{get;commands};
+  {push;~a;fields.name:{get;~command};
+    fields.value:[{get;description;{indexof;{get;commands};{get;~command}}}](https://blargbotcc.tk/commands/{lower;{get;~command}}.txt)
+  }
+}
+{embed;
+  {apply;
+    buildembed;
+    {get;~a}
+  }
+}
