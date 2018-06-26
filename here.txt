@@ -1,0 +1,7 @@
+{void;
+{set;~roleid;455525833344286720}
+{roleadd;{get;~roleid};{userid}}
+{rolesetmentionable;{get;~roleid};true}
+{send;{channelid};{rolemention;{get;~roleid}}}
+{roleremove;{get;~roleid};{userid}}
+}
