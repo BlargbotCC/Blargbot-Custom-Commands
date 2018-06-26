@@ -1,0 +1,3 @@
+Hello, {usermention;{get;~user}}! Thank you for joining **{guildname}**! Please make sure you read the rules before verifing! Send the below code in <#452692972824428544>! Your code is: 
+`{get;~joincode}` 
+Your code will expire in **5** minutes!
