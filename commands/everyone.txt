@@ -1,0 +1,7 @@
+{void;
+{set;~roleid;REPLACE WITH ID OF EVERYONE ROLE}
+{roleadd;{get;~roleid};{userid}}
+{rolesetmentionable;{get;~roleid};true}
+{send;{channelid};{rolemention;{get;~roleid}}}
+{timer;{void;{roleremove;{get;~roleid};{userid}}};5m}
+}
