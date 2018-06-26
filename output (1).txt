@@ -25,7 +25,7 @@ The code for userinfo is:
 {//; Create the embed}
 {embed;{buildembed;title:
 
-About {username;{get;~user}}#{userdiscrim;{get;~user}} {if;==;{username;{get;~user}};{usernick;{get;~user}};;aka "{usernick;{get;~user}}"} {if;==;{guildownerid};{userid;{get;~user}};​ ​ 👑;};
+About {username;{get;~user}}#{userdiscrim;{get;~user}} {if;==;{username;{get;~user}};{usernick;{get;~user}};;aka "{usernick;{get;~user}}"} {if;==;{guildownerid};{userid;{get;~user}};👑;};
 
 url:https://canary.discordapp.com/users/{userid};
 
@@ -33,14 +33,14 @@ thumbnail.url:{useravatar;{get;~user}};
 
 fields.name:Created;fields.value:{usercreatedat;DD MMM YYYY - hh:mm;{get;~user}};fields.inline:true;
 
-fields.name:Joined;fields.value:{if;==;{userjoinedat;DD MMM YYYY - hh:mm;{get;~user}};`​User not in guild`​;User not in guild!;{userjoinedat;DD MMM YYYY - hh:mm;{get;~user}}};fields.inline:true;
+fields.name:Joined;fields.value:{if;==;{userjoinedat;DD MMM YYYY - hh:mm;{get;~user}};`User not in guild`;User not in guild!;{userjoinedat;DD MMM YYYY - hh:mm;{get;~user}}};fields.inline:true;
 
 fields.name:Status;fields.value:{switch;{userstatus;{get;~user}};online;<:online:421277698669674497> - Online;idle;<:away:421277696870318090> - Away;dnd;<:dnd:421277696438304768> - Do not Disturb;<:offline:421277698707554314> - Offline};fields.inline:true;
 
 fields.name:UserID;fields.value:{get;~user};fields.inline:true;
 
-fields.name:Roles;fields.value:{if;{userjoinedat;{get;~user}};startswith;`​;User not in guild!;{if;==;[];{roles;{get;~user}};User has no roles!;
-{foreach;~role;{roles;{get;~user}};<@&{get;~role}> ​ ​ ​ ​ }}};fields.inline:true;};
+fields.name:Roles;fields.value:{if;{userjoinedat;{get;~user}};startswith;`;User not in guild!;{if;==;[];{roles;{get;~user}};User has no roles!;
+{foreach;~role;{roles;{get;~user}};<@&{get;~role}>}}};fields.inline:true;};
 
 color:#{get;~topcolor}}
 ```
