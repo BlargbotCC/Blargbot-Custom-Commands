@@ -1,0 +1,5 @@
+{switch;{args;0};
+  eval;{if;!=;{userid};313083002508804107;{return}}{inject;{args;1;n}}Success!{return};
+  list;{execcc;commands_list;{args}};
+  Error: please use a valid command: Valid commands are: List
+}
