@@ -1,0 +1,10 @@
+{void;{set;~userid;{userid;{args}}}}
+{set;~userstatus;{userstatus;{get;~userid}}}
+{set;~user;{username;{get;~userid}}#{userdiscrim;{get;~userid}}}
+{switch;{get;~userstatus};
+online;{set;~emoji;<:online:455063732972814336>};
+idle;{set;~emoji;<:idle:455063821334085632>};
+dnd;{set;~emoji;<:dnd:455063862731866153>};
+offline;{set;~emoji;<:offline:455063902385078292>}
+}
+{get;~emoji} **{get;~user}**
