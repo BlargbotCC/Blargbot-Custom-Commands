@@ -11,4 +11,4 @@ If you'd like to chat with us but don't have a Discord account go to our [Discor
 ## Partners
 > [Dyno Custom Commands](https://dynocc.tk) 
 
-> We make custom commands for Dyno that anyone can use.
+The sister to this service! We make custom commands for Dyno that anyone can use.
