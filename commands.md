@@ -1,6 +1,6 @@
 # Command List
 ### Fun Commands
-[`b!8Ball`](https://blargbotcc.tk/commands/8ball.txt) An ordinary 8 ball command!
+[`b!8ball`](https://blargbotcc.tk/commands/8ball.txt) An ordinary 8 ball command!
 
 [`b!embed`](https://blargbotcc.tk/commands/embed.txt) Makes an embed in the current channel!
 
@@ -17,14 +17,12 @@
 [`b!sayd`](https://blargbotcc.tk/commands/sayd.txt) Have the bot say what you want it to and delete the command afterwards!
 
 [`b!randuser`](https://blargbotcc.tk/commands/randuser.txt) Randomly select a user in your discord server!
-
-[`b!ustatus`](https://blargbotcc.tk/commands/ustatus.txt) Check a user's status (Online, Idle, Do Not Disturb, Offline/Invisible)!
 ### Server Commands
 [`b!myuserinfo`](https://blargbotcc.tk/commands/myuserinfo.txt) Grabs your info and shows the tags that will get that info in your own custom command!
 
-[`b!ustatus`](https://blargbotcc.tk/commands/ustatus.txt) Grabs the status of the user mentioned or ID!
+[`b!ustatus`](https://blargbotcc.tk/commands/ustatus.txt) Grabs the status of the user mentioned or ID! (Online, Idle, DND, Offline/Invisible)
 
-[`b!roles`](https://blargbotcc.tk/commands/roles.txt) A multiple page role list, useful for when you have a lot!
+[`b!roles`](https://blargbotcc.tk/commands/roles.txt) A multiple page role list, useful for when you have a lot of roles!
 
 [`b!rolecreate`](https://blargbotcc.tk/commands/rolecreate.txt) A command to create roles!
 
@@ -36,12 +34,10 @@
 ### Suggestion Commands
 [`b!suggest`](https://blargbotcc.tk/commands/suggest.txt) **Anyone Can Use** | Sends a suggestion to that channel and adds the reactions
 
-[`b!sd`](https://blargbotcc.tk/commands/sd.txt) **Mod Use Only** | Deletes a suggestion with that ID
+[`b!sd`](https://blargbotcc.tk/commands/sd.txt) Deletes a suggestion with that ID
 ### How To Add Custom Commands
 To add custom commands to your Blargbot, follow the instructions below:
 
 ```b!ccommand <command name> <command content>```
-
-Role Needed: Admin
 
 For more information on the custom command setup, visit the [Blargbot Custom Commands Discord server](https://discord.gg/wFBYUXS) or go to [www.blargbot.xyz/commands/#ccommand](https://blargbot.xyz/commands/#ccommand).
