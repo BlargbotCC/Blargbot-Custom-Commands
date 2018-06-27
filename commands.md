@@ -32,7 +32,7 @@
 
 [`b!messageinfo`](https://blargbotcc.tk/commands/messangerinfo.txt) Gives information about the supplied message ID!
 ### Suggestion Commands
-[`b!suggest`](https://blargbotcc.tk/commands/suggest.txt) **Anyone Can Use** | Sends a suggestion to that channel and adds the reactions
+[`b!suggest`](https://blargbotcc.tk/commands/suggest.txt) Sends a suggestion to that channel and adds the reactions
 
 [`b!sd`](https://blargbotcc.tk/commands/sd.txt) Deletes a suggestion with that ID
 ### How To Add Custom Commands
