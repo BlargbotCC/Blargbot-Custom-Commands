@@ -11,6 +11,6 @@ If you'd like to chat with us but don't have a Discord account go to our [Discor
 
 The sister to this service! We make custom commands for Dyno that anyone can use.
 ## Announcements
-<iframe style="border-radius: 5px;" height="600" width="100%" frameborder="0" src="https://titanembeds.com/embed/452675283485589505?theme=DiscordDark&defaultchannel=452944221364551690&css=241">Looks like your browser does not support iframes, biotch.</iframe>
+<iframe style="border-radius: 5px;" height="469" width="100%" frameborder="0" src="https://titanembeds.com/embed/452675283485589505?theme=DiscordDark&defaultchannel=452944221364551690&css=241">Looks like your browser does not support iframes, biotch.</iframe>
 ## Other Information
 - This website is under construction. If it somehow gets deleted one day let us know on the [BCC Discord Server](https://discord.gg/wFBYUXS).
