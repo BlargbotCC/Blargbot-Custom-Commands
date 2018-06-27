@@ -9,12 +9,9 @@ b!greet {execcc;greeting}
 
 ## **Step 2a**: 
 We have two options below, if you are setting up a greeting without a verification system, or with a verification system. Use the **first** one if you **do not** have a verification system, use the **second** if you **do** have a verification system. You may enter this in any channel.
-```fix
-{if;{userisbot};
-  {void;{roleadd;{roleid;bots};{userid}}};
-  Welcome to **{guildname}**, {usermention}! 
-}
-```
+
+<iframe class="code" id="code" src="https://blargbotcc.tk/commands/easygreeting.txt" width="100%" frameborder="0">
+
 What this code does is gives a bot the role named `Bots`, or sends a welcome message in the channel set in **Step 1**.
 
 ## **Step 2b**: 
