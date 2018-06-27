@@ -9,5 +9,5 @@ If you'd like to chat with us but don't have a Discord account go to our [Discor
 
  Note: This website is under construction. If it somehow gets deleted one day let us know on the [BCC Discord Server](https://discord.gg/wFBYUXS).
 ## Partners
->> [Dyno Custom Commands](https://dynocc.tk)
- The sister to this service! || We make custom commands for Dyno that anyone can use. - 
+> [Dyno Custom Commands](https://dynocc.tk) 
+We make custom commands for Dyno that anyone can use.
