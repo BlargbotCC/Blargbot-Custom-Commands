@@ -1,0 +1,4 @@
+{if;{userisbot};
+  {void;{roleadd;{roleid;bots};{userid}}};
+  Welcome to {guildname}, {usermention}! 
+}
