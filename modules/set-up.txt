@@ -1,0 +1,14 @@
+{set;~args;{args}}
+{void}
+{loop;
+  {set;~var;{shift;~args}}
+  {set;~descript;{shift;~args}}
+  {send;{channelid};{get;~descript}}
+  {set;
+    {get;~var}
+    {messagetext;
+      {waitmessage}
+    }
+  }
+  ;{math;/;{length;{args}};2}
+}
