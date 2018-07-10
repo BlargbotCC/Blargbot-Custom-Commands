@@ -7,7 +7,7 @@ Check out our GitHub Repo by [clicking here](https://github.com/BlargbotCC/Blarg
 
 If you'd like to chat with us but don't have a Discord account go to our [Discord Chat](/chat) powered by [WidgetBot](https://widgetbot.io)!
 ## Partners
-> [**Dyno Custom Commands**](https://dynocc.tk) 
+> [**Dyno Custom Commands**](https://dynocc.xyz) 
 
 The sister to this service! We make custom commands for Dyno that anyone can use.
 ## Announcements
