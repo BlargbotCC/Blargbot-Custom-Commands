@@ -1,0 +1,16 @@
+~~user:~~ **Does not exist**
+userid: {userid} 
+username: {username} 
+userdiscrim: {userdiscrim} 
+usernick: {usernick} 
+usergame: {usergame} 
+usergametype: {usergametype} 
+userstatus: {userstatus}
+useravatar: {useravatar} 
+userisbot: {userisbot}
+usermention: {usermention} 
+usercreatedat: {usercreatedat} 
+userjoinedat: {userjoinedat} 
+usertimezone: {usertimezone} 
+
+(`{lb}usertimezone{rb}` requires that a user sets their timezone using the `b!timezone` command)

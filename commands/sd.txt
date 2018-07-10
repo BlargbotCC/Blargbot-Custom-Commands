@@ -1,0 +1,9 @@
+{if;==;{argslength};0;
+     Please provide a suggestion id!;
+
+     {fallback;{delete;452693155830169601;{get;_suggestid-{realpad;{args};4;0;left}}}Please provide a valid suggestion id! It must be numbers only!}
+
+{quiet;{set;~successmessageid;{send;{channelid};👌}}
+{set;~messageid;{messageid}}
+{exec;autodelete;5s ~messageid ~successmessageid}
+}

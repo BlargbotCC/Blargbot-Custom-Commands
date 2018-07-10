@@ -1,0 +1,3 @@
+{if;==;{commandname};makecode;{return}}
+{set;~joincode;bcc{randstr;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-;{randint;26;52}}
+}

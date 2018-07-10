@@ -1,0 +1,46 @@
+The code for userinfo is:
+```
+{//; If there is an input, check if the input is correct.}
+{if;==;0;{argslength};;{if;{userjoinedat;x;{args;0};quiet};==;{args;0};
+{addreact;{messageid};<:redTick:322847218694356992>}**Whoops!** It looks like the user you provided does not exists.{return};
+  {set;~user;{userid;{args;0}}}
+}}
+
+{//; If there is no input; update the variable with the executer. }
+{if;==;;{get;~user};{set;~user;{userid}};}
+
+{//; Get the top color of the user for the embed.}
+{set;~roles;{roles;{get;~user}}}
+{set;~topcolor;000000}
+{foreach;~role;{get;~roles};
+  {if;{get;~topcolor};==;000000;
+    {set;~rolecolor;{rolecolor;{get;~role}}}
+    {if;{get;~rolecolor};!=;000000;
+      {set;~topcolor;{get;~rolecolor}}
+    }
+  }
+}
+{if;==;000000;{get;~topcolor};{set;~topcolor;7289DA}}
+
+{//; Create the embed}
+{embed;{buildembed;title:
+
+About {username;{get;~user}}#{userdiscrim;{get;~user}} {if;==;{username;{get;~user}};{usernick;{get;~user}};;aka "{usernick;{get;~user}}"} {if;==;{guildownerid};{userid;{get;~user}};👑;};
+
+url:https://canary.discordapp.com/users/{userid};
+
+thumbnail.url:{useravatar;{get;~user}};
+
+fields.name:Created;fields.value:{usercreatedat;DD MMM YYYY - hh:mm;{get;~user}};fields.inline:true;
+
+fields.name:Joined;fields.value:{if;==;{userjoinedat;DD MMM YYYY - hh:mm;{get;~user}};`User not in guild`;User not in guild!;{userjoinedat;DD MMM YYYY - hh:mm;{get;~user}}};fields.inline:true;
+
+fields.name:Status;fields.value:{switch;{userstatus;{get;~user}};online;<:online:421277698669674497> - Online;idle;<:away:421277696870318090> - Away;dnd;<:dnd:421277696438304768> - Do not Disturb;<:offline:421277698707554314> - Offline};fields.inline:true;
+
+fields.name:UserID;fields.value:{get;~user};fields.inline:true;
+
+fields.name:Roles;fields.value:{if;{userjoinedat;{get;~user}};startswith;`;User not in guild!;{if;==;[];{roles;{get;~user}};User has no roles!;
+{foreach;~role;{roles;{get;~user}};<@&{get;~role}>}}};fields.inline:true;};
+
+color:#{get;~topcolor}}
+```

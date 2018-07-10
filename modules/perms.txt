@@ -1,0 +1,21 @@
+{//;Displays help}
+{if;{logic;&&;{logic;!;{iscc}};{bool;==;{commandname};perms}}; **Purpose**: To check if a user can manage another user using role hiearchy
+**Responses**: returns `​​true`​​ if commanding user's highest role is above the target user or commanding user is server owner, otherwise returns false.
+**Arguments**: `​​[stop]`​​
+If any args, `​​stop`​​ stops entire tag, provided user doesn't have perms to execute command. leave blank for false.
+The target user is checked using the temporary variable `​​~user`​​, set to the user ID of the target user before execution.
+{return}}
+
+{//;Checks for invalid user, if true, stops execution}
+{if;{userid;{get;~user}};==;No users found in {if;{iscc};custom command;tag} `​{commandname}`​;false{return}}
+{//;sets if it should stop everything if invalid perms}
+{set;~return;{bool;!=;{argslength};0}}
+{//; First we check if they are server owner, if yes, automatic `​​​​​​​​true`​​​​​​​​ because no one can be above them}
+{if;==;{guildownerid};{userid};true {return;false}}
+{//;we also check if the target user is guild owner, since idk how to do this more efficiently}
+{if;==;{guildownerid};{userid;{get;~user}};false{return;{get;~return}}}
+{//;next we check if the highest role of the first user is higher than the highest role of the second user, we dispense `​​​​​​​​true`​​​​​​​​, otherwise we dispense `​​​​​​​​false`​​​​​​​​}
+{set;~perms;{bool;<;{indexof;{roles};{shift;{roles;{userid}}}};{indexof;{roles};{shift;{roles;{userid;{get;~user}}}}}}
+}
+{get;~perms}
+{return;{logic;&&;{logic;!;{get;~perms}};{get;~return}}

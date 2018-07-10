@@ -1,0 +1,2 @@
+{set;~randuser;{randuser}}
+{username;{get;~randuser}}#{userdiscrim;{get;~randuser}}
