@@ -1,7 +1,0 @@
-{set;~userid;{userid;{args}}}
-  {void;{roleremove;452692932466573332;{get;~userid}}
-  {roleadd;452692927743918101;{get;~userid}}}
-{void;{execcc;verifyrolesadd}}
-  {void;{roleremove;452692932466573332;{get;~userid}}
-  {roleadd;452692927743918101;{get;~userid}}
-}
