@@ -1,0 +1,8 @@
+{embed;{buildembed;
+  author.name:Coming Soon!;
+  description:The tag `{commandname}` is being worked on and will be completed shortly!;
+  author.icon_url:https://cdn.discordapp.com/emojis/424403179807965185.png;
+  footer.text:{username}#{userdiscrim};
+  timestamp:{time};
+  footer.icon_url:{useravatar}
+}}
