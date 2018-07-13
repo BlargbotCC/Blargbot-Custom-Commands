@@ -10,7 +10,7 @@ Run the tag `getcode_setup` on your guild and follow the directions to set up th
 
 
 # Basic Method
-> Use this method only if you want a verification system that you don't need to tinker with, otherwise use the [Advanced Method](/guides/verification#Advanced%20Method) 
+> Use this method only if you want a verification system that you don't need to tinker with, otherwise use the [Advanced Method](/guides/verification##Step%202:) 
 > (You can change using the advanced or basic method at any time!)
 
 ## Step 2:
