@@ -1,0 +1,30 @@
+{set;~guild-humans;0}
+{set;~guild-bots;0}
+{void;
+  {foreach;~memberid;{guildmembers};
+    {if;{userisbot;{get;~memberid}};
+      {increment;~guild-bots;1};
+      {increment;~guild-humans;1}
+    }
+  }
+}
+{embed;
+  {embedbuild;
+    title:Member Count - {guildname};
+    thumbnail.url:{guildicon};
+    description:A set of reliable member counts!;
+    fields.name:Total members;
+    fields.value:{guildsize};
+    fields.name:Humans;
+    fields.value:{get;~guild-humans};
+    fields.inline:true;
+    fields.name:Bots;
+    fields.value:{get;~guild-bots};
+    fields.inline:true;
+    color:lightblue;
+    timestamp:{time};
+    author.name:Blargbot Custom Commands;
+    author.icon_url:https://cdn.discordapp.com/icons/452675283485589505/fd6222809443f42424358f3fcc3eb65a.png?size=64;
+    author.url:https://discord.gg/m4BB8eU;
+  }
+}
