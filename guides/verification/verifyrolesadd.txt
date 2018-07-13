@@ -1,4 +1,0 @@
-{set;~userroles;{get;_{get;~userid}-roles}}
-{foreach;~role;{get;_{get;~userid}-verifyroles};
-{void;{roleadd;{get;~role};{get;~userid}}}
-}
