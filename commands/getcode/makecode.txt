@@ -1,0 +1,7 @@
+{if;{logic;&&;{iscc};{bool;includes;["r","eval","getcode","makecode"];{commandname}}};;
+  You can't run this command from a tag!
+  {return}
+}
+
+{set;~joincode;bcc{randstr;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-;{randint;26;52}}
+}
