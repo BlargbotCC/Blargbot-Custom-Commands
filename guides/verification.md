@@ -1,7 +1,7 @@
 # Verification Set-up
 > **CAUTION!**
 > **Still buggy!**
-> **USE AT OWN RISH**
+> **USE AT OWN RISK**
 
 {delete} 
 {trim;
